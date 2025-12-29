@@ -15,7 +15,7 @@ const CTASection = () => {
           </h2>
           <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
             Discover products that honor tradition while nurturing your
-            wellbeing. Pure, authentic, and crafted with care.
+            wellbeing. Pure, authentic, and crafted with care
           </p>
           <Button
             variant="hero"
