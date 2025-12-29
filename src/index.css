@@ -1,0 +1,210 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* Sunnah & Soul Design System
+   Premium minimal wellness aesthetic
+   Colors: Sage Green, Cream, Muted Gold
+*/
+
+@layer base {
+  :root {
+    /* Backgrounds */
+    --background: 40 30% 97%;
+    --foreground: 85 20% 15%;
+
+    /* Cards & Surfaces */
+    --card: 40 25% 99%;
+    --card-foreground: 85 20% 15%;
+
+    --popover: 40 25% 99%;
+    --popover-foreground: 85 20% 15%;
+
+    /* Primary - Sage/Olive Green */
+    --primary: 85 25% 35%;
+    --primary-foreground: 40 30% 97%;
+
+    /* Secondary - Lighter Sage */
+    --secondary: 85 15% 92%;
+    --secondary-foreground: 85 25% 30%;
+
+    /* Muted */
+    --muted: 40 20% 94%;
+    --muted-foreground: 85 15% 45%;
+
+    /* Accent - Muted Gold */
+    --accent: 40 45% 55%;
+    --accent-foreground: 40 30% 97%;
+
+    --destructive: 0 65% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 85 25% 35%;
+
+    --radius: 0.375rem;
+
+    /* Custom Brand Colors */
+    --cream: 40 30% 97%;
+    --cream-dark: 40 25% 92%;
+    --sage: 85 25% 35%;
+    --sage-light: 85 20% 50%;
+    --sage-muted: 85 15% 75%;
+    --gold: 40 45% 55%;
+    --gold-light: 40 40% 70%;
+    --gold-dark: 40 50% 45%;
+
+    /* Sidebar */
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 85 20% 15%;
+    --sidebar-primary: 85 25% 35%;
+    --sidebar-primary-foreground: 40 30% 97%;
+    --sidebar-accent: 40 20% 94%;
+    --sidebar-accent-foreground: 85 25% 30%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 85 25% 35%;
+  }
+
+  .dark {
+    --background: 85 20% 10%;
+    --foreground: 40 30% 95%;
+
+    --card: 85 20% 12%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 85 20% 12%;
+    --popover-foreground: 40 30% 95%;
+
+    --primary: 85 30% 45%;
+    --primary-foreground: 85 20% 10%;
+
+    --secondary: 85 15% 20%;
+    --secondary-foreground: 40 30% 95%;
+
+    --muted: 85 15% 18%;
+    --muted-foreground: 40 20% 65%;
+
+    --accent: 40 45% 55%;
+    --accent-foreground: 85 20% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 85 15% 20%;
+    --input: 85 15% 20%;
+    --ring: 85 30% 45%;
+
+    --sidebar-background: 85 20% 10%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 85 30% 45%;
+    --sidebar-primary-foreground: 85 20% 10%;
+    --sidebar-accent: 85 15% 18%;
+    --sidebar-accent-foreground: 40 30% 95%;
+    --sidebar-border: 85 15% 20%;
+    --sidebar-ring: 85 30% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply px-6 py-16 md:px-12 md:py-24 lg:px-20 lg:py-32;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-6 md:px-12;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.4s ease-out forwards;
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-300 hover:-translate-y-1;
+  }
+
+  .gold-divider {
+    @apply w-16 h-0.5 bg-accent mx-auto;
+  }
+}
+
+@layer utilities {
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
