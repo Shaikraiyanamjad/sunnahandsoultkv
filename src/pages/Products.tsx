@@ -82,7 +82,7 @@ const Products = () => {
                 <span className="inline-block text-accent text-sm font-medium tracking-widest uppercase mb-4">
                   Our Range
                 </span>
-                <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6">
+                <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6 text-primary">
                   Our Products
                 </h1>
                 <div className="gold-divider mb-6" />

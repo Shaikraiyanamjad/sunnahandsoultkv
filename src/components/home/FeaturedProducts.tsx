@@ -61,7 +61,7 @@ const FeaturedProducts = () => {
           <span className="inline-block text-accent text-sm font-medium tracking-widest uppercase mb-4">
             Our Collection
           </span>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-4 text-primary">
             Featured Products
           </h2>
           <div className="gold-divider mb-6" />
@@ -93,7 +93,7 @@ const FeaturedProducts = () => {
 
               {/* Product Info */}
               <div className="p-6">
-                <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+                <h3 className="font-heading text-xl font-semibold text-foreground mb-2 text-primary">
                   {product.name}
                 </h3>
                 <p className="text-muted-foreground text-sm mb-4">

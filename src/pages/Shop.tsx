@@ -85,10 +85,10 @@ const Shop = () => {
           <section className="section-padding bg-secondary">
             <div className="container-custom">
               <div className="max-w-3xl mx-auto text-center">
-                <span className="inline-block text-accent text-sm font-medium tracking-widest uppercase mb-4">
+                <span className="inline-block text-accent text-sm font-medium tracking-widest uppercase mb-4 ">
                   Our Collection
                 </span>
-                <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6">
+                <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6 text-primary">
                   Shop All Products
                 </h1>
                 <div className="gold-divider mb-6" />
@@ -129,7 +129,7 @@ const Shop = () => {
 
                     {/* Product Info */}
                     <div className="p-6">
-                      <h3 className="font-heading text-xl font-semibold text-foreground mb-2">
+                      <h3 className="font-heading text-xl font-semibold text-foreground mb-2 text-primary">
                         {product.name}
                       </h3>
                       <p className="text-muted-foreground text-sm mb-3 line-clamp-2">

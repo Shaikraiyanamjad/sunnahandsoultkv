@@ -12,8 +12,8 @@
 @layer base {
   :root {
     /* Backgrounds */
-    --background: 40 30% 97%;
-    --foreground: 85 20% 15%;
+   --background: 222 47% 11%;   /* very dark blue-charcoal */
+--foreground: 210 40% 96%;
 
     /* Cards & Surfaces */
     --card: 40 25% 99%;

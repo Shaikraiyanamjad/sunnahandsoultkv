@@ -11,7 +11,7 @@ const SunnahConnection = () => {
           </div>
 
           {/* Quote */}
-          <blockquote className="font-heading text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-8 italic">
+          <blockquote className="font-heading text-2xl md:text-3xl lg:text-4xl text-foreground leading-relaxed mb-8 italic text-primary">
             "The Prophet ﷺ encouraged natural remedies and wholesome nourishment. 
             Sunnah & Soul brings these values into modern life with purity and care."
           </blockquote>

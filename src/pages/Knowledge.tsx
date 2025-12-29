@@ -73,7 +73,7 @@ const Knowledge = () => {
                 <span className="inline-block text-accent text-sm font-medium tracking-widest uppercase mb-4">
                   Learn With Us
                 </span>
-                <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6">
+                <h1 className="font-heading text-4xl md:text-5xl font-semibold text-foreground mb-6 text-primary">
                   Knowledge Hub
                 </h1>
                 <div className="gold-divider mb-6" />
@@ -102,7 +102,7 @@ const Knowledge = () => {
                         <span className="inline-block px-3 py-1 text-xs font-medium bg-secondary text-accent rounded-full mb-3">
                           {article.category}
                         </span>
-                        <h2 className="font-heading text-xl md:text-2xl font-semibold text-foreground mb-3 group-hover:text-accent transition-colors">
+                        <h2 className="font-heading text-xl md:text-2xl font-semibold text-foreground mb-3 group-hover:text-accent transition-colors text-background">
                           <Link to={`/knowledge/${article.slug}`}>
                             {article.title}
                           </Link>
